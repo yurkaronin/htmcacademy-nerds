@@ -360,7 +360,7 @@ input[type="radio"].visually-hidden {
 
 /* презентация  */
 .presentation {
-  padding: 42px 0;
+  padding: 42px 0 0;
 }
 
 .presentation .wrapper {
@@ -473,13 +473,48 @@ input[type="radio"].visually-hidden {
   font-size: 26px;
   line-height: 40px;
 }
-
+/* партнеры  */
+.partners {
+  padding: 46px 30px 44px;
+  position: relative;
+}
 .partners__list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 50px;
 
+}
+
+.partners__list li,
+.partners__link {
+  max-width: 200px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.partners::after {
+  content: "";
+  background-color: #eeeeee;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.partners__link {
+  opacity: 0.2;
+}
+
+.partners__link:active {
+  opacity: 0.1;
+}
+
+.partners__link:hover,
+.partners:focus {
+  opacity: 1;
 }
