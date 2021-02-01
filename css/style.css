@@ -183,6 +183,10 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation__link {
@@ -468,4 +472,14 @@ input[type="radio"].visually-hidden {
 .table__value sup {
   font-size: 26px;
   line-height: 40px;
+}
+
+.partners__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 50px;
+
 }
