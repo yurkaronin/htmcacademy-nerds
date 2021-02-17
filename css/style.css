@@ -224,6 +224,25 @@ input[type="radio"].visually-hidden {
   padding: 13px 25px;
 }
 
+.navigation__link--cart {
+  padding-left: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__link--cart::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-image: url("../img/icons/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0;
+}
+
 .navigation__link:hover,
 .navigation__link:focus {
   color: #fb565a;
@@ -836,6 +855,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   position: relative;
 }
+
 .catalog__item img {
   width: 100%;
 }
