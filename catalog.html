@@ -60,10 +60,21 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
 
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter-form__group-wrapper">
-              <legend class="filter-form__title  title-sm">Стоимость:</legend>
-              <div>
-                <!-- тут будут ползунки выбора диапозона  -->
+            <fieldset class="filter-form__group-wrapper  filter-form__group-wrapper--first">
+              <legend class="filter-form__title  filter-form__title--range  title-sm">Стоимость:</legend>
+              <!-- сложный фильтр  -->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                </div>
               </div>
             </fieldset>
 
