@@ -481,8 +481,6 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
 }
 
-.presentation__data {}
-
 .presentation__img {
   max-width: 360px;
   margin-bottom: 30px;
@@ -498,8 +496,6 @@ input[type="radio"].visually-hidden {
   display: block;
   text-align: center;
 }
-
-.presentation .table {}
 
 .table__them td {
   font-size: 16px;
@@ -827,13 +823,19 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.order__list a {
+.order__link {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   margin-right: 25px;
+  opacity: 0.3;
+}
+
+.order__link:not([href]),
+.order__link--active {
+  opacity: 1;
 }
 
 .order__buttons {
@@ -860,21 +862,93 @@ input[type="radio"].visually-hidden {
   margin-bottom: 55px;
 }
 
-.catalog__item {
+.product-card {
   max-width: 358px;
   width: 100%;
   position: relative;
+  padding-top: 40px;
 }
 
-.catalog__item img {
+.product-card::after {
+  content: "";
+  background-image: url(../img/shop/browser.svg);
+  left: 0;
+  top: 0;
+  position: absolute;
   width: 100%;
+  display: block;
+  height: 40px;
+  z-index: 0;
+  opacity: 0.12;
 }
 
-.catalog__item div {
+.product-card:hover::after,
+.product-card:focus::after,
+.product-card:active::after {
+  opacity: 1;
+}
+
+.product-card__image {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  display: block;
+}
+
+.product-card__details {
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: #eeeeee;
-  padding: 26px 80px 44px;
+  padding: 26px 50px 44px;
   text-align: center;
+  z-index: 9;
+  opacity: 0;
+}
+
+.product-card:hover .product-card__details,
+.product-card:focus .product-card__details,
+.product-card:active .product-card__details {
+  opacity: 1;
+}
+
+.product-card__link {
+  display: block;
+  text-decoration: none;
+  color: #000000
+}
+
+.product-card__title {
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.product-card__link:hover,
+.product-card__link:focus {
+  color: #FB565A;
+}
+
+.product-card__link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.product-card__text {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+}
+
+.product-card__button {
+  padding: 17px 70px 15px;
 }
