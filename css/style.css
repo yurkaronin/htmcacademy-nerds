@@ -55,6 +55,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
+  position: relative;
 }
 
 .title {
@@ -410,11 +411,7 @@ input[type="radio"].visually-hidden {
   padding: 42px 0 0;
 }
 
-.presentation .wrapper {
-  position: relative;
-}
-
-.presentation .wrapper::after {
+.wrapper--border::after {
   content: "";
   background-color: #eeeeee;
   height: 2px;
@@ -537,19 +534,7 @@ input[type="radio"].visually-hidden {
   max-width: 1105px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
   padding-bottom: 46px;
-}
-
-.partners__list::after {
-  content: "";
-  background-color: #eeeeee;
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
 }
 
 .partners__list li,
@@ -647,6 +632,20 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.social__link:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social__link:active svg {
+  opacity: 0.3;
 }
 
 .invite__title {
