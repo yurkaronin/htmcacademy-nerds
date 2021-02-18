@@ -59,43 +59,51 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
 
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
-              <legend class="title-sm">Стоимость:</legend>
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-form__group-wrapper">
+              <legend class="filter-form__title  title-sm">Стоимость:</legend>
               <div>
                 <!-- тут будут ползунки выбора диапозона  -->
               </div>
             </fieldset>
 
-            <fieldset>
-              <legend class="title-sm">Сетка:</legend>
-              <label>
-                <input type="radio" name="grid" value="Адаптивная" checked>Адаптивная
+            <fieldset class="filter-form__group-wrapper">
+              <legend class="filter-form__title  title-sm">Сетка:</legend>
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="radio" name="grid" value="Адаптивная" checked>
+                <span class="filter-form__label-wrap">Адаптивная</span>
               </label>
-              <label>
-                <input type="radio" name="grid" value="Фиксированная">Фиксированная
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="radio" name="grid" value="Фиксированная">
+                <span class="filter-form__label-wrap">Фиксированная</span>
               </label>
-              <label>
-                <input type="radio" name="grid" value="Резиновая">Резиновая
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="radio" name="grid" value="Резиновая">
+                <span class="filter-form__label-wrap">Резиновая</span>
               </label>
             </fieldset>
 
-            <fieldset>
-              <legend class="title-sm">Особенности:</legend>
-              <label>
-                <input type="checkbox" name="slider-option" value="Слайдер" checked>Слайдер
+            <fieldset class="filter-form__group-wrapper">
+              <legend class="filter-form__title  title-sm">Особенности:</legend>
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="slider-option" value="Слайдер" checked>
+                <span class="filter-form__label-wrap">Слайдер</span>
               </label>
-              <label>
-                <input type="checkbox" name="advantages-option" value="Преимущества">Блок преимуществ
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="advantages-option" value="Преимущества">
+                <span class="filter-form__label-wrap">Блок преимуществ</span>
               </label>
-              <label>
-                <input type="checkbox" name="news-option" value="Новости" checked>Новости
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="news-option" value="Новости" checked>
+                <span class="filter-form__label-wrap">Новости</span>
               </label>
-              <label>
-                <input type="checkbox" name="gallery-option" value="Галерея">Галерея
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="gallery-option" value="Галерея">
+                <span class="filter-form__label-wrap">Галерея</span>
               </label>
-              <label>
-                <input type="checkbox" name="cart-option" value="Корзина">Корзина
+              <label class="filter-form__label">
+                <input class="visually-hidden" type="checkbox" name="cart-option" value="Корзина">
+                <span class="filter-form__label-wrap">Корзина</span>
               </label>
             </fieldset>
 
