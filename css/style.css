@@ -707,6 +707,17 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-family: Roboto, Arial, sans-serif;
   width: 360px;
+  border: 2px solid #D7DCDE;
+  border-radius: 3px;
+}
+
+.modal__form input:focus {
+  border-color: #000000;
+}
+
+.modal__form input:invalid {
+  border-color: #E74246;
+  color: #E74246;
 }
 
 .modal__text {
