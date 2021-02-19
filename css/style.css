@@ -975,7 +975,7 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/icons/checkbox-off.svg);
   position: absolute;
   left: 0;
-  width: 23px;
+  width: 25px;
   height: 23px;
   content: "";
   background-repeat: no-repeat;
@@ -1004,60 +1004,55 @@ input[type="radio"].visually-hidden {
 }
 
 /* сложный фильтр  */
-.filter-item legend {
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .range-controls {
-  position: relative;
-
+  width: 260px;
   height: 80px;
-  margin-bottom: 15px;
-  padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  background-color: #f1f1f1;
-
-  border-radius: 5px;
+  margin-bottom: 14px;
+  padding: 30px 20px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .range-controls .scale {
   height: 2px;
+  background: #D7DCDF;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 
-  background: #d7dcde;
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-
-  background: #00ca74;
+  background: #00CA74;
 }
 
 .range-controls .toggle {
   position: absolute;
-    top: 31px;
-    left: 0;
-    width: 4px;
-    height: 4px;
-    padding: 0;
-    border: 8px solid #ffffff;
-    background-color: #ababab;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
-    border-radius: 50%;
-    cursor: pointer;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #fff;
+  background: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  box-sizing: content-box;
+  top: -9px;
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 0;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 70%;
 }
 
 .price-controls {
@@ -1073,18 +1068,23 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls input {
-  width: 60px;
-  padding: 8px 10px;
+  width: 80px;
+  padding: 8px 20px 8px 15px;
   margin-left: 10px;
-
-  font-family: Roboto, Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
-  text-align: center;
   color: #283136;
-
   border: none;
-  border-radius: 5px;
-  background: #f1f1f1;
+  background: #eeeeee;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.price-controls input::-webkit-outer-spin-button,
+.price-controls input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .max-price {

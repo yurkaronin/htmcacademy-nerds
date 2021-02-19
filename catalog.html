@@ -64,13 +64,19 @@
               <legend class="filter-form__title  filter-form__title--range  title-sm">Стоимость:</legend>
               <!-- сложный фильтр  -->
               <div class="range-filter">
+                <!-- ползунки фильтра -->
                 <div class="range-controls">
+
                   <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    <div class="bar" style="margin-left: 0; width: 70%"></div>
+
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+
+
                 </div>
+                <!-- поля для ввода ценового диапозона -->
                 <div class="price-controls">
                   <label class="min-price">от <input name="min-price" type="number" value="0"></label>
                   <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
@@ -129,7 +135,7 @@
             <span class="title-sm">Сортировать:</span>
             <!-- опции сортировки  -->
             <ul class="order__list">
-              <li><a  class="order__link  order__link--active">По цене</a></li>
+              <li><a class="order__link  order__link--active">По цене</a></li>
               <li><a class="order__link" href="#">По типу</a></li>
               <li><a class="order__link" href="#">По названию</a></li>
             </ul>
