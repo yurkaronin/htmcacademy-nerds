@@ -251,7 +251,7 @@
           <p class="contacts__text">191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8 <br>
             тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a class="button" href="#">Напишите нам</a>
+          <a class="button" href="#" id="button-calback">Напишите нам</a>
         </div>
         <!-- тут будет карта  -->
       </div>
@@ -294,6 +294,31 @@
       </div>
     </div>
   </footer>
+
+  <!-- модальное окно  -->
+  <section class="modal" id="write-us">
+    <h2 class="modal__title">Напишите нам</h2>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
+      <label class="modal__name">Ваше имя:
+        <input name="name" type="text" placeholder="Имя Фамилия">
+      </label>
+
+      <label class="modal__email">Ваш e-mail:
+        <input name="email" type="email" placeholder="email@example.com">
+      </label>
+
+      <p class="modal__area-label">Текст письма:
+        <textarea class="modal__text" name="message" cols="30" rows="3">В свободной форме</textarea>
+      </p>
+
+      <button class="write-us__button  button" type="submit">Отправить</button>
+    </form>
+
+    <button class="close-btn" type="button" aria-label="Закрыть окно" title="Закрыть окно" id="button-close"></button>
+  </section>
+
+  <script src="js/main.js"></script>
 
 </body>
 
